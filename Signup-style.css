@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;900&display=swap');
+html  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important; 
+}
+body{
+    background-image: linear-gradient(to right, #1c2035, #040A22);
+}
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+/*SVG icon styling*/
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    outline: none;
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #FFF;
+}
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+/*Navbar styiling*/
+.navbar-brand img{
+    height: 50px;
+    padding: 0 10px;
+}
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10 !important;
+}
+.navbar{
+    background: transparent;
+    padding: 0 !important;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    color: #FFF !important;
+    font-weight: 600;
+    text-align: left;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+/*Background Video Styiling*/
+#videoBG {
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*Header-text*/
+#header{
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 10px 10px 10px black;
+    font-size: 130px;
+    position: absolute;
+    color: #FFF;
+    padding: 80px;
+}
+/*Dashboard*/
+#dashboard{
+    padding: 90px 170px;
+}
+#dashboard .container{
+    position: unset;
+    backdrop-filter: blur(10px);
+    float: right;
+    border-radius: 10px;
+    margin-left: auto;
+    border: 2px solid #FFF;
+    width: 300px;
+    height: 400px;
+}
+input, select, textarea {
+    color: #FFF;
+}    
+.form-group #label::placeholder{
+    color: #d2d4d2;
+}
+.form-group #label{
+    color: #FFF;
+}
+.form-control{
+    background-color: transparent;
+}
+.text-center{
+    font-weight: bolder;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+    color: #FFF;
+}
+/*Button Effects*/
+.btn{
+    top: 280px;
+    left: 70px;
+    position: absolute;
+    width: 150px;
+    margin: auto;
+    color: #6bfa19;
+    border: 1px solid #6bfa19;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.btn:hover{
+    color: #FFF;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #6bfa19;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1:before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn1:hover:before{
+    height: 180%;
+}
